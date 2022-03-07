@@ -7,28 +7,23 @@
 
 import UIKit
 
-protocol IntrinsicResultProtocol {
-    
-    func dialogDismissed()
-}
 
-class IntrinsicResultViewController: UIViewController, UITextFieldDelegate {
+class IntrinsicResultViewController: UIViewController {
     
-
+    
     @IBOutlet weak var dimView: UIView!
     @IBOutlet weak var dialogView: UIView!
     @IBOutlet weak var fairValueLabel: UILabel!
     @IBOutlet weak var recalculateButton: UIButton!
     
     var fairValueText = ""
-    var delegate: IntrinsicResultProtocol?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Round the dialog box corners
         dialogView.layer.cornerRadius = 10
-
+        
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -47,28 +42,25 @@ class IntrinsicResultViewController: UIViewController, UITextFieldDelegate {
             self.dimView.alpha = 1
             self.fairValueLabel.alpha = 1
         }, completion: nil)
-
+        
     }
     
     
     @IBAction func recalculatePressed(_ sender: Any) {
         
-            
-    
+        
+        
         // Dismiss the popup
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
             self.dimView.alpha = 1
         }) { (completed) in
             // Dismiss the popup
             self.dismiss(animated: true, completion: nil)
-    
-            // Notify delegate that the popup was dismissed
-            self.delegate?.dialogDismissed()
-  
+            
         }
- 
-
+        
+        
     }
     
-
+    
 }

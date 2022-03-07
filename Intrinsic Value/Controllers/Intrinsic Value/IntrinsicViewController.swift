@@ -7,8 +7,8 @@
 
 import UIKit
 
-class IntrinsicViewController: UIViewController, IntrinsicResultProtocol, UITextFieldDelegate {
-
+class IntrinsicViewController: UIViewController {
+    
     
     @IBOutlet weak var epsTextField: UITextField!
     @IBOutlet weak var growthTextField: UITextField!
@@ -16,22 +16,18 @@ class IntrinsicViewController: UIViewController, IntrinsicResultProtocol, UIText
     @IBOutlet weak var ratioTextField: UITextField!
     
     var resultDialog: IntrinsicResultViewController?
-     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Initialise the result dialog
         resultDialog = storyboard?.instantiateViewController(withIdentifier: "intrinsicResultVC") as? IntrinsicResultViewController
-        // Customizing the style of the popup presentation 
+        // Customizing the style of the popup presentation
         resultDialog?.modalPresentationStyle = .overCurrentContext
         
-        epsTextField.delegate = self
-        growthTextField.delegate = self
-        returnTextField.delegate = self
-        ratioTextField.delegate = self
- 
     }
-
+    
+    
     @IBAction func calculationPressed(_ sender: UIButton) {
         
         let eps = Double(epsTextField.text!)
@@ -48,6 +44,10 @@ class IntrinsicViewController: UIViewController, IntrinsicResultProtocol, UIText
             
             print(finalResult)
             
+            epsTextField.text = ""
+            growthTextField.text = ""
+            returnTextField.text = ""
+            ratioTextField.text = ""
             
             
             // Show popup
@@ -56,11 +56,8 @@ class IntrinsicViewController: UIViewController, IntrinsicResultProtocol, UIText
                 resultDialog!.fairValueText = finalResult
                 present(resultDialog!, animated: true, completion: nil)
             }
-            epsTextField.text = ""
-            growthTextField.text = ""
-            returnTextField.text = ""
-            ratioTextField.text = ""
-
+            
+            
         } else {
             
             // Alert
@@ -68,9 +65,9 @@ class IntrinsicViewController: UIViewController, IntrinsicResultProtocol, UIText
         }
         
         
-
+        
     }
-
+    
     
     func showAlert(title: String, message: String) {
         
@@ -83,18 +80,8 @@ class IntrinsicViewController: UIViewController, IntrinsicResultProtocol, UIText
         
         // Show the alert
         present(alert, animated: true, completion: nil)
-
-
-    }
-    
-    func dialogDismissed() {
         
-        epsTextField.text = ""
-        growthTextField.text = ""
-        returnTextField.text = ""
-        ratioTextField.text = ""
-     
+        
     }
     
-   
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C229B43427D4FBEB001C37AB /* IntrinsicResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C229B43327D4FBEB001C37AB /* IntrinsicResultViewController.swift */; };
 		C2452A9E27D253DC00CF79B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452A9D27D253DC00CF79B3 /* AppDelegate.swift */; };
 		C2452AA027D253DC00CF79B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452A9F27D253DC00CF79B3 /* SceneDelegate.swift */; };
 		C2452AA227D253DC00CF79B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452AA127D253DC00CF79B3 /* HomeViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C229B43327D4FBEB001C37AB /* IntrinsicResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicResultViewController.swift; sourceTree = "<group>"; };
 		C2452A9A27D253DC00CF79B3 /* Intrinsic Value.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intrinsic Value.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2452A9D27D253DC00CF79B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2452A9F27D253DC00CF79B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C229B43527D50B29001C37AB /* Intrinsic Value */ = {
+			isa = PBXGroup;
+			children = (
+				C2452AB827D2583100CF79B3 /* IntrinsicViewController.swift */,
+				C229B43327D4FBEB001C37AB /* IntrinsicResultViewController.swift */,
+			);
+			path = "Intrinsic Value";
+			sourceTree = "<group>";
+		};
 		C2452A9127D253DC00CF79B3 = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				C2452AA127D253DC00CF79B3 /* HomeViewController.swift */,
-				C2452AB827D2583100CF79B3 /* IntrinsicViewController.swift */,
+				C229B43527D50B29001C37AB /* Intrinsic Value */,
 				C2452ABB27D2584700CF79B3 /* CalculatorViewController.swift */,
 				C2452ABD27D2585200CF79B3 /* NewsViewController.swift */,
 				C2452ABF27D2586100CF79B3 /* MarketViewController.swift */,
@@ -186,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2452AC027D2586100CF79B3 /* MarketViewController.swift in Sources */,
+				C229B43427D4FBEB001C37AB /* IntrinsicResultViewController.swift in Sources */,
 				C2452AA227D253DC00CF79B3 /* HomeViewController.swift in Sources */,
 				C2452AB927D2583100CF79B3 /* IntrinsicViewController.swift in Sources */,
 				C2452A9E27D253DC00CF79B3 /* AppDelegate.swift in Sources */,

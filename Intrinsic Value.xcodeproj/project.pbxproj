@@ -7,26 +7,92 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46B8CAE33890386F8762BC92 /* Pods_Intrinsic_Value.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B847B0A860C4FEAB7B34D0A /* Pods_Intrinsic_Value.framework */; };
 		C229B43427D4FBEB001C37AB /* IntrinsicResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C229B43327D4FBEB001C37AB /* IntrinsicResultViewController.swift */; };
 		C2452A9E27D253DC00CF79B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452A9D27D253DC00CF79B3 /* AppDelegate.swift */; };
 		C2452AA027D253DC00CF79B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452A9F27D253DC00CF79B3 /* SceneDelegate.swift */; };
-		C2452AA227D253DC00CF79B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452AA127D253DC00CF79B3 /* HomeViewController.swift */; };
+		C2452AA227D253DC00CF79B3 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452AA127D253DC00CF79B3 /* NewsViewController.swift */; };
 		C2452AA527D253DC00CF79B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2452AA327D253DC00CF79B3 /* Main.storyboard */; };
 		C2452AA827D253DC00CF79B3 /* Intrinsic_Value.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C2452AA627D253DC00CF79B3 /* Intrinsic_Value.xcdatamodeld */; };
 		C2452AAA27D253DF00CF79B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2452AA927D253DF00CF79B3 /* Assets.xcassets */; };
 		C2452AAD27D253DF00CF79B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2452AAB27D253DF00CF79B3 /* LaunchScreen.storyboard */; };
 		C2452AB927D2583100CF79B3 /* IntrinsicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452AB827D2583100CF79B3 /* IntrinsicViewController.swift */; };
 		C2452ABC27D2584700CF79B3 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452ABB27D2584700CF79B3 /* CalculatorViewController.swift */; };
-		C2452ABE27D2585200CF79B3 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452ABD27D2585200CF79B3 /* NewsViewController.swift */; };
+		C2452ABE27D2585200CF79B3 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452ABD27D2585200CF79B3 /* CommunityViewController.swift */; };
 		C2452AC027D2586100CF79B3 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452ABF27D2586100CF79B3 /* MarketViewController.swift */; };
+		C24C03CE27D9003100AD88E0 /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C03CD27D9003100AD88E0 /* Calculation.swift */; };
+		C2F79C9227D894B0005B9EAB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F79C9127D894B0005B9EAB /* Article.swift */; };
+		C2F79C9427D894C7005B9EAB /* AtricleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F79C9327D894C7005B9EAB /* AtricleCell.swift */; };
+		C2F79C9627D894DF005B9EAB /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F79C9527D894DF005B9EAB /* ArticleService.swift */; };
+		C2F79C9827D894F0005B9EAB /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F79C9727D894F0005B9EAB /* ArticleModel.swift */; };
+		C2F79C9A27D89505005B9EAB /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F79C9927D89505005B9EAB /* CacheManager.swift */; };
+		C2F79C9E27D89603005B9EAB /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F79C9D27D89603005B9EAB /* WebViewController.swift */; };
+		C2FEAE6D27D7B1AD00CBE718 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FEAE6327D7B16D00CBE718 /* SwifteriOS.framework */; };
+		C2FEAE6E27D7B1AD00CBE718 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C2FEAE6327D7B16D00CBE718 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C2FEAE7527D7D26C00CBE718 /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C2FEAE7427D7D26C00CBE718 /* TweetSentimentClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C2FEAE6227D7B16D00CBE718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2FEAE5A27D7B16C00CBE718 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		C2FEAE6427D7B16D00CBE718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2FEAE5A27D7B16C00CBE718 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		C2FEAE6627D7B16D00CBE718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2FEAE5A27D7B16C00CBE718 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		C2FEAE6827D7B16D00CBE718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2FEAE5A27D7B16C00CBE718 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		C2FEAE6A27D7B16D00CBE718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2FEAE5A27D7B16C00CBE718 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2FEAE6F27D7B1AE00CBE718 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C2FEAE6E27D7B1AD00CBE718 /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		73889B799FE3C1EF3C2B1A40 /* Pods-Intrinsic Value.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intrinsic Value.debug.xcconfig"; path = "Target Support Files/Pods-Intrinsic Value/Pods-Intrinsic Value.debug.xcconfig"; sourceTree = "<group>"; };
+		8B847B0A860C4FEAB7B34D0A /* Pods_Intrinsic_Value.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intrinsic_Value.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8DD2DBFE51B3A9EFCF7CCF2 /* Pods-Intrinsic Value.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intrinsic Value.release.xcconfig"; path = "Target Support Files/Pods-Intrinsic Value/Pods-Intrinsic Value.release.xcconfig"; sourceTree = "<group>"; };
 		C229B43327D4FBEB001C37AB /* IntrinsicResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicResultViewController.swift; sourceTree = "<group>"; };
 		C2452A9A27D253DC00CF79B3 /* Intrinsic Value.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intrinsic Value.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2452A9D27D253DC00CF79B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2452A9F27D253DC00CF79B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C2452AA127D253DC00CF79B3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C2452AA127D253DC00CF79B3 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		C2452AA427D253DC00CF79B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2452AA727D253DC00CF79B3 /* Intrinsic_Value.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Intrinsic_Value.xcdatamodel; sourceTree = "<group>"; };
 		C2452AA927D253DF00CF79B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,8 +100,17 @@
 		C2452AAE27D253DF00CF79B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2452AB827D2583100CF79B3 /* IntrinsicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicViewController.swift; sourceTree = "<group>"; };
 		C2452ABB27D2584700CF79B3 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
-		C2452ABD27D2585200CF79B3 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		C2452ABD27D2585200CF79B3 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		C2452ABF27D2586100CF79B3 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		C24C03CD27D9003100AD88E0 /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
+		C2F79C9127D894B0005B9EAB /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		C2F79C9327D894C7005B9EAB /* AtricleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtricleCell.swift; sourceTree = "<group>"; };
+		C2F79C9527D894DF005B9EAB /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		C2F79C9727D894F0005B9EAB /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		C2F79C9927D89505005B9EAB /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		C2F79C9D27D89603005B9EAB /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		C2FEAE5A27D7B16C00CBE718 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../../../../Desktop/Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		C2FEAE7427D7D26C00CBE718 /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +118,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2FEAE6D27D7B1AD00CBE718 /* SwifteriOS.framework in Frameworks */,
+				46B8CAE33890386F8762BC92 /* Pods_Intrinsic_Value.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		058CEA9F9A771365FDD22DFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73889B799FE3C1EF3C2B1A40 /* Pods-Intrinsic Value.debug.xcconfig */,
+				B8DD2DBFE51B3A9EFCF7CCF2 /* Pods-Intrinsic Value.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C229B43527D50B29001C37AB /* Intrinsic Value */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,8 +147,11 @@
 		C2452A9127D253DC00CF79B3 = {
 			isa = PBXGroup;
 			children = (
+				C2FEAE5A27D7B16C00CBE718 /* Swifter.xcodeproj */,
 				C2452A9C27D253DC00CF79B3 /* Intrinsic Value */,
 				C2452A9B27D253DC00CF79B3 /* Products */,
+				C2FEAE6C27D7B1AD00CBE718 /* Frameworks */,
+				058CEA9F9A771365FDD22DFD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,10 +179,10 @@
 		C2452AB427D2546400CF79B3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C2452AA127D253DC00CF79B3 /* HomeViewController.swift */,
+				C2F79C8B27D89495005B9EAB /* News */,
 				C229B43527D50B29001C37AB /* Intrinsic Value */,
-				C2452ABB27D2584700CF79B3 /* CalculatorViewController.swift */,
-				C2452ABD27D2585200CF79B3 /* NewsViewController.swift */,
+				C28297A327D652A300703335 /* Calculator */,
+				C2FEAE5827D7AC4E00CBE718 /* Community */,
 				C2452ABF27D2586100CF79B3 /* MarketViewController.swift */,
 			);
 			path = Controllers;
@@ -125,6 +214,58 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C28297A327D652A300703335 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				C2452ABB27D2584700CF79B3 /* CalculatorViewController.swift */,
+				C24C03CD27D9003100AD88E0 /* Calculation.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		C2F79C8B27D89495005B9EAB /* News */ = {
+			isa = PBXGroup;
+			children = (
+				C2452AA127D253DC00CF79B3 /* NewsViewController.swift */,
+				C2F79C9D27D89603005B9EAB /* WebViewController.swift */,
+				C2F79C9127D894B0005B9EAB /* Article.swift */,
+				C2F79C9527D894DF005B9EAB /* ArticleService.swift */,
+				C2F79C9727D894F0005B9EAB /* ArticleModel.swift */,
+				C2F79C9327D894C7005B9EAB /* AtricleCell.swift */,
+				C2F79C9927D89505005B9EAB /* CacheManager.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		C2FEAE5827D7AC4E00CBE718 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				C2452ABD27D2585200CF79B3 /* CommunityViewController.swift */,
+				C2FEAE7427D7D26C00CBE718 /* TweetSentimentClassifier.mlmodel */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		C2FEAE5B27D7B16C00CBE718 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2FEAE6327D7B16D00CBE718 /* SwifteriOS.framework */,
+				C2FEAE6527D7B16D00CBE718 /* SwifterMac.framework */,
+				C2FEAE6727D7B16D00CBE718 /* SwifterDemoiOS.app */,
+				C2FEAE6927D7B16D00CBE718 /* SwifterDemoMac.app */,
+				C2FEAE6B27D7B16D00CBE718 /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2FEAE6C27D7B1AD00CBE718 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B847B0A860C4FEAB7B34D0A /* Pods_Intrinsic_Value.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +273,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2452AB127D253DF00CF79B3 /* Build configuration list for PBXNativeTarget "Intrinsic Value" */;
 			buildPhases = (
+				FFE344D00DD83A4FB55F7042 /* [CP] Check Pods Manifest.lock */,
 				C2452A9627D253DC00CF79B3 /* Sources */,
 				C2452A9727D253DC00CF79B3 /* Frameworks */,
 				C2452A9827D253DC00CF79B3 /* Resources */,
+				C2FEAE6F27D7B1AE00CBE718 /* Embed Frameworks */,
+				E0B1C4DB1CBE94D02B3E0D24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,12 +315,56 @@
 			mainGroup = C2452A9127D253DC00CF79B3;
 			productRefGroup = C2452A9B27D253DC00CF79B3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C2FEAE5B27D7B16C00CBE718 /* Products */;
+					ProjectRef = C2FEAE5A27D7B16C00CBE718 /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C2452A9927D253DC00CF79B3 /* Intrinsic Value */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C2FEAE6327D7B16D00CBE718 /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = C2FEAE6227D7B16D00CBE718 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2FEAE6527D7B16D00CBE718 /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = C2FEAE6427D7B16D00CBE718 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2FEAE6727D7B16D00CBE718 /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = C2FEAE6627D7B16D00CBE718 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2FEAE6927D7B16D00CBE718 /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = C2FEAE6827D7B16D00CBE718 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C2FEAE6B27D7B16D00CBE718 /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = C2FEAE6A27D7B16D00CBE718 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C2452A9827D253DC00CF79B3 /* Resources */ = {
@@ -191,18 +379,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E0B1C4DB1CBE94D02B3E0D24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Intrinsic Value/Pods-Intrinsic Value-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Intrinsic Value/Pods-Intrinsic Value-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Intrinsic Value/Pods-Intrinsic Value-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFE344D00DD83A4FB55F7042 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Intrinsic Value-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C2452A9627D253DC00CF79B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C2452AC027D2586100CF79B3 /* MarketViewController.swift in Sources */,
+				C2F79C9827D894F0005B9EAB /* ArticleModel.swift in Sources */,
 				C229B43427D4FBEB001C37AB /* IntrinsicResultViewController.swift in Sources */,
-				C2452AA227D253DC00CF79B3 /* HomeViewController.swift in Sources */,
+				C2452AA227D253DC00CF79B3 /* NewsViewController.swift in Sources */,
 				C2452AB927D2583100CF79B3 /* IntrinsicViewController.swift in Sources */,
+				C2FEAE7527D7D26C00CBE718 /* TweetSentimentClassifier.mlmodel in Sources */,
 				C2452A9E27D253DC00CF79B3 /* AppDelegate.swift in Sources */,
+				C2F79C9427D894C7005B9EAB /* AtricleCell.swift in Sources */,
 				C2452AA027D253DC00CF79B3 /* SceneDelegate.swift in Sources */,
-				C2452ABE27D2585200CF79B3 /* NewsViewController.swift in Sources */,
+				C2F79C9227D894B0005B9EAB /* Article.swift in Sources */,
+				C2F79C9627D894DF005B9EAB /* ArticleService.swift in Sources */,
+				C2F79C9E27D89603005B9EAB /* WebViewController.swift in Sources */,
+				C24C03CE27D9003100AD88E0 /* Calculation.swift in Sources */,
+				C2F79C9A27D89505005B9EAB /* CacheManager.swift in Sources */,
+				C2452ABE27D2585200CF79B3 /* CommunityViewController.swift in Sources */,
 				C2452ABC27D2584700CF79B3 /* CalculatorViewController.swift in Sources */,
 				C2452AA827D253DC00CF79B3 /* Intrinsic_Value.xcdatamodeld in Sources */,
 			);
@@ -348,6 +586,7 @@
 		};
 		C2452AB227D253DF00CF79B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73889B799FE3C1EF3C2B1A40 /* Pods-Intrinsic Value.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -361,6 +600,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +616,7 @@
 		};
 		C2452AB327D253DF00CF79B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD2DBFE51B3A9EFCF7CCF2 /* Pods-Intrinsic Value.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -389,6 +630,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

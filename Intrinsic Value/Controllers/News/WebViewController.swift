@@ -6,13 +6,49 @@
 //
 
 import UIKit
+import WebKit
 
 class WebViewController: UIViewController {
 
+    var articleUrl: String?
+    
+    @IBOutlet weak var webView: WKWebView!
+    
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        webView.navigationDelegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // check that there's a url
+        if articleUrl != nil {
+            
+            // Create the URL object
+            let url = URL(string: articleUrl!)
+            
+            guard url != nil else {
+                // Couldn't create the url object
+                return
+            }
+            
+            // Create the URLRequest object
+            let request = URLRequest(url: url!)
+            
+//            // Start spinner
+//            spinner.alpha = 1
+//            spinner.startAnimating()
+            
+         
+            // Load it in the view
+            webView.load(request)
+        }
+        
+      
+        
     }
     
 
@@ -26,4 +62,15 @@ class WebViewController: UIViewController {
     }
     */
 
+}
+
+extension WebViewController: WKNavigationDelegate {
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        
+        // Stop the spinner and hide it
+        spinner.stopAnimating()
+        spinner.alpha = 0
+        
+    }
 }

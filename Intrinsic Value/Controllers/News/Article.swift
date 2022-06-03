@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Atricle {
+
+struct Article: Decodable {
     
     var author: String?
     var title: String?

@@ -7,4 +7,11 @@
 
 import Foundation
 
-// check if root element is actually a dictionery, and if so create struct to mimic entire feed
+import Foundation
+
+struct ArticleService: Decodable {
+    
+    var totalResults: Int?
+    var articles: [Article]?
+    
+}

@@ -28,6 +28,7 @@ class CommunityViewController: UIViewController {
     @IBAction func searchPressed(_ sender: UIButton) {
 
         getTweets()
+        textField.text = ""
         
     }
     
@@ -92,4 +93,9 @@ class CommunityViewController: UIViewController {
     }
 
     
+    @IBAction func textFieldTapped(_ sender: Any) {
+        
+        buySellLabel.text = ""
+    }
+ 
 }

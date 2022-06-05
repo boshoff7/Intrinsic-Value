@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		46B8CAE33890386F8762BC92 /* Pods_Intrinsic_Value.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B847B0A860C4FEAB7B34D0A /* Pods_Intrinsic_Value.framework */; };
+		C2287BAC284CCEF900CAEAA2 /* Keyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2287BAB284CCEF900CAEAA2 /* Keyboard+Extension.swift */; };
+		C2287BB4284CD36E00CAEAA2 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2287BB3284CD36E00CAEAA2 /* String+Extensions.swift */; };
+		C2287BB6284CD3AA00CAEAA2 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2287BB5284CD3AA00CAEAA2 /* Int+Extensions.swift */; };
+		C2287BB8284CD3D000CAEAA2 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2287BB7284CD3D000CAEAA2 /* Double+Extensions.swift */; };
+		C2287BBA284CE59600CAEAA2 /* Decimal+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2287BB9284CE59600CAEAA2 /* Decimal+Extension.swift */; };
 		C229B43427D4FBEB001C37AB /* IntrinsicResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C229B43327D4FBEB001C37AB /* IntrinsicResultViewController.swift */; };
 		C2452A9E27D253DC00CF79B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452A9D27D253DC00CF79B3 /* AppDelegate.swift */; };
 		C2452AA027D253DC00CF79B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2452A9F27D253DC00CF79B3 /* SceneDelegate.swift */; };
@@ -87,6 +92,11 @@
 		73889B799FE3C1EF3C2B1A40 /* Pods-Intrinsic Value.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intrinsic Value.debug.xcconfig"; path = "Target Support Files/Pods-Intrinsic Value/Pods-Intrinsic Value.debug.xcconfig"; sourceTree = "<group>"; };
 		8B847B0A860C4FEAB7B34D0A /* Pods_Intrinsic_Value.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Intrinsic_Value.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DD2DBFE51B3A9EFCF7CCF2 /* Pods-Intrinsic Value.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Intrinsic Value.release.xcconfig"; path = "Target Support Files/Pods-Intrinsic Value/Pods-Intrinsic Value.release.xcconfig"; sourceTree = "<group>"; };
+		C2287BAB284CCEF900CAEAA2 /* Keyboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Keyboard+Extension.swift"; sourceTree = "<group>"; };
+		C2287BB3284CD36E00CAEAA2 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		C2287BB5284CD3AA00CAEAA2 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		C2287BB7284CD3D000CAEAA2 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		C2287BB9284CE59600CAEAA2 /* Decimal+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Extension.swift"; sourceTree = "<group>"; };
 		C229B43327D4FBEB001C37AB /* IntrinsicResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntrinsicResultViewController.swift; sourceTree = "<group>"; };
 		C2452A9A27D253DC00CF79B3 /* Intrinsic Value.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intrinsic Value.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2452A9D27D253DC00CF79B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +143,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C2287BB2284CCEFF00CAEAA2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C2287BAB284CCEF900CAEAA2 /* Keyboard+Extension.swift */,
+				C2287BB3284CD36E00CAEAA2 /* String+Extensions.swift */,
+				C2287BB5284CD3AA00CAEAA2 /* Int+Extensions.swift */,
+				C2287BB7284CD3D000CAEAA2 /* Double+Extensions.swift */,
+				C2287BB9284CE59600CAEAA2 /* Decimal+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C229B43527D50B29001C37AB /* Intrinsic Value */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +192,7 @@
 				C2452AB627D2548900CF79B3 /* Models */,
 				C2452AB527D2547500CF79B3 /* Views */,
 				C2452AB427D2546400CF79B3 /* Controllers */,
+				C2287BB2284CCEFF00CAEAA2 /* Extensions */,
 			);
 			path = "Intrinsic Value";
 			sourceTree = "<group>";
@@ -424,9 +447,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F79C9827D894F0005B9EAB /* ArticleModel.swift in Sources */,
+				C2287BB6284CD3AA00CAEAA2 /* Int+Extensions.swift in Sources */,
+				C2287BBA284CE59600CAEAA2 /* Decimal+Extension.swift in Sources */,
 				C229B43427D4FBEB001C37AB /* IntrinsicResultViewController.swift in Sources */,
 				C2A0C0D42844E1A900F8E698 /* TweetSentimentClassifier.mlpackage in Sources */,
+				C2287BB8284CD3D000CAEAA2 /* Double+Extensions.swift in Sources */,
 				C2452AA227D253DC00CF79B3 /* NewsViewController.swift in Sources */,
+				C2287BB4284CD36E00CAEAA2 /* String+Extensions.swift in Sources */,
 				C2452AB927D2583100CF79B3 /* IntrinsicViewController.swift in Sources */,
 				C2452A9E27D253DC00CF79B3 /* AppDelegate.swift in Sources */,
 				C2F79C9427D894C7005B9EAB /* AtricleCell.swift in Sources */,
@@ -439,6 +466,7 @@
 				C2452ABE27D2585200CF79B3 /* CommunityViewController.swift in Sources */,
 				C2452ABC27D2584700CF79B3 /* CalculatorViewController.swift in Sources */,
 				C2452AA827D253DC00CF79B3 /* Intrinsic_Value.xcdatamodeld in Sources */,
+				C2287BAC284CCEF900CAEAA2 /* Keyboard+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -47,9 +47,7 @@ class IntrinsicResultViewController: UIViewController {
     
     
     @IBAction func recalculatePressed(_ sender: Any) {
-        
-        
-        
+ 
         // Dismiss the popup
         UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
             self.dimView.alpha = 1

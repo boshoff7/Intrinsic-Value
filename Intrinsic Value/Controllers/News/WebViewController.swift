@@ -69,8 +69,8 @@ extension WebViewController: WKNavigationDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         
         // Stop the spinner and hide it
-        spinner.stopAnimating()
-        spinner.alpha = 0
+//        spinner.stopAnimating()
+//        spinner.alpha = 0
         
     }
 }

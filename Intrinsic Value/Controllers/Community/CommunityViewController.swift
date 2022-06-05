@@ -23,6 +23,16 @@ class CommunityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupTextFields()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        textField.becomeFirstResponder()
+    }
+    
+    private func setupTextFields() {
+        textField.addDoneButton()
     }
 
     @IBAction func searchPressed(_ sender: UIButton) {

@@ -11,7 +11,7 @@ import NaturalLanguage
 import SwifteriOS
 import SwiftyJSON
 
-class CommunityViewController: UIViewController {
+class CommunityViewController: UIViewController, UITextFieldDelegate {
  
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var buySellLabel: UILabel!
@@ -24,12 +24,15 @@ class CommunityViewController: UIViewController {
         super.viewDidLoad()
 
         setupTextFields()
+        self.textField.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         textField.becomeFirstResponder()
     }
+    
+    // MARK: - TextField and Keyboard Setup
     
     private func setupTextFields() {
         textField.addDoneButton()
@@ -38,9 +41,20 @@ class CommunityViewController: UIViewController {
     @IBAction func searchPressed(_ sender: UIButton) {
 
         getTweets()
+        textField.endEditing(true)
         textField.text = ""
         
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.addDoneButton()
+        getTweets()
+        textField.endEditing(true)
+        textField.text = ""
+        return true
+    }
+    
+    // MARK: - Fetching Data
     
     func getTweets() {
      

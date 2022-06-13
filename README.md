@@ -28,12 +28,7 @@ SKILLS LEARNT:
  - Animations: Alpha properties of the elements on the result view controller was adjusted to create a dim and fade in/out effect.
  - Functions: A function, with input values and a return value was used to perform the calculation.
 
-3. Calculator
-
-<img width="498" alt="Screenshot 2022-06-09 at 13 18 31" src="https://user-images.githubusercontent.com/91250039/172838993-dffa02ae-7dcb-43a1-8eae-3b134c488455.png">
-
-
-4. Twitter Sentiment - Seeing what people are saying about a certain company on twitter, using the Twitter API and Machine Learning.
+3. Twitter Sentiment - Seeing what people are saying about a certain company on twitter, using the Twitter API and Machine Learning.
 
 <img width="686" alt="Screenshot 2022-06-09 at 13 35 53" src="https://user-images.githubusercontent.com/91250039/172839005-907be97d-d9e3-4d84-bf37-4b3547828944.png">
 
